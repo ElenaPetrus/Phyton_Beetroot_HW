@@ -13,8 +13,12 @@ day = str(date.today())
 # print(want_to_print)
 
 # option 2
-want_to_print = f'Good day{full_name}! {day} is a perfect day to learn some python.'
-print(want_to_print)
+# want_to_print = f'Good day {full_name}! {day} is a perfect day to learn some python.'
+# print(want_to_print)
+
+# option 3
+want_to_print = 'Good day {}! {} is a perfect day to learn some python.'
+print(want_to_print.format(full_name, day))
 
 
 a = 12
