@@ -7,9 +7,15 @@ full_name = first_name + ' ' + second_name
 print(full_name)
 
 day = str(date.today())
-want_to_print = 'Good day'+' '+full_name+'!'' '+day + \
-    ' '+'is a perfect day to learn some python.'
+# option 1
+# want_to_print = 'Good day'+' '+full_name+'!'' '+day + \
+#    ' '+'is a perfect day to learn some python.'
+# print(want_to_print)
+
+# option 2
+want_to_print = f'Good day{full_name}! {day} is a perfect day to learn some python.'
 print(want_to_print)
+
 
 a = 12
 b = 7
