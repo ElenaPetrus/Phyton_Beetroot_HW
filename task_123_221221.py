@@ -25,6 +25,6 @@ want_to_print = 'Good day {1}! {0} is a perfect day to learn some python.'
 print(want_to_print.format(day, full_name))
 
 
-a = 12
-b = 7
+a = int(input("Enter fist number: "))
+b = int(input("Enter second number: "))
 print(a+b, a-b, a/b, a*b, a**b, a % b, a//b, sep='\n')
