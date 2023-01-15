@@ -25,8 +25,6 @@ while True:
     user_phone_string = input("Please write your phone number: ")
     if user_phone_string == 'no':
         break
-    # catch any resulting ValueError during the conversion to float
-
     else:
 
         if (user_phone_string).isdigit() != 1:
