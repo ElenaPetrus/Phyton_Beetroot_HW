@@ -19,6 +19,24 @@
 #         print(f'You phone number {user_phone_string} has been saved.')
 #     break
 
+# Task 2 Option 2
+print("Input [no] for exit.")
+while True:
+    user_phone_string = input("Please write your phone number: ")
+    if user_phone_string == 'no':
+        break
+    # catch any resulting ValueError during the conversion to float
+
+    else:
+
+        if (user_phone_string).isdigit() != 1:
+            print('You phone number should contain ONLY digits.Please try again.')
+        elif len(user_phone_string) != 10:
+            print('your phone number should contain 10 digits. Please try again.')
+        else:
+            print(f'You phone number {user_phone_string} has been saved.')
+            break
+
 
 # Task 3
 # stored_name = 'olena'
