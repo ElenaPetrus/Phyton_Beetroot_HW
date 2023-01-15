@@ -6,15 +6,18 @@
 #     print(user_string[:2]+user_string[-2:])
 
 
-# Task 2
+# # Task 2
+# user_phone_string = input('Please write phone number:')
 # while True:
-#     if len(user_phone_string) < 10:
+
+#     if (user_phone_string).isdigit() != 1:
+#         print('You phone number should contain ONLY digits.Please try again.')
+
+#     elif len(user_phone_string) != 10:
 #         print('your phone number should contain 10 digits. Please try again.')
-#     elif user_phone_string.isdigit() == False:
-#         print('You phone number does not contains all numbers.Please try again.')
 #     else:
 #         print(f'You phone number {user_phone_string} has been saved.')
-#         break
+#     break
 
 
 # Task 3
