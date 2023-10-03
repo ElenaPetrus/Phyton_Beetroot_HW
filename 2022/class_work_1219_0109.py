@@ -59,6 +59,7 @@
 # person_1 = Person("Linus", 36)
 # print(person_1.name)
 
+
 # # create your own class called "Animal"
 # class Animal:
 #     # create a method __init__ that is going to take 3 parameters except 'self': color, kind, number of legs
@@ -87,3 +88,101 @@
 # print(animal1)
 # print(animal2)
 
+
+# import time
+# snowflake_loop = '\\|/ —'
+
+
+# for _ in range(25):
+#     for i in snowflake_loop:
+#         print(i, end='')
+#         time.sleep(0.5)
+#         print('\r', end='')
+
+
+# # def decorator(some_funct):
+# #     print("beginning_message")
+# #     some_funct()
+# #     print("ending_message")
+# #     return some_funct
+# # # @decorator syntax is equal to the second last line of code
+# # @decorator
+# # def say_hi():
+# #     print("Hi")
+# # say_hi = decorator(say_hi)  # this one is equal to @decorator
+# # say_hi()
+# # we can modify the above mentioned
+# def decorator(some_funct):
+#     def wrapper():
+#         print("beginning_message")
+#         some_funct()
+#         print("ending_message")
+#     return wrapper
+
+# # @decorator syntax is equal to the second last line of code
+
+# @decorator
+# def say_hi():
+#     print("Hi")
+
+
+# say_hi = decorator(say_hi)  # this one is equal to @decorator
+# say_hi()
+
+
+# class MyClass:
+
+# @staticmethod
+# def some_method():
+#     print("this method does nothing with self")
+
+
+# def our_decorator(some_funct):
+#     def wrapper(*args):
+#         print("something actually meaningful that we want to do before the function")
+#         some_funct(*args)
+#         print("something actually meaningful that we want to do after the function")
+#     return wrapper
+
+
+# @our_decorator
+# def some_function_that_takes_two_parameters(first_param, second_param):
+#     print(second_param)
+
+
+# some_function_that_takes_two_parameters(5)
+
+# create a "Mammal" class
+# assign some general attributes to it
+# create a sub-class (Human or something) and put some sublass-specific attribute(s) into it
+# create an instance of a sub-class and print the attributes
+
+
+class Mammal:
+    def __init__(self, gender, age):
+        self.gender = gender
+        self.age = age
+
+    def __str__(self):
+        class_name = self.__class__.__name__
+        modifier = "an" if any([class_name.startswith(letter)
+                               for letter in "AEIOU"]) else "a"
+        return f"I'm {modifier} {class_name}, my gender is {self.gender} and age is {self.age}"
+
+
+class Human(Mammal):
+    def __init__(self, iq, *args):
+        Mammal.__init__(self, *args)
+        self.iq = iq
+
+
+class Animal(Mammal):
+    pass
+
+
+human = Human(180, "male", 5)
+mammal = Mammal("female", 10)
+animal = Animal("female", 13)
+print(human)
+print(mammal)
+print(animal)
