@@ -18,21 +18,16 @@ Sample String: 'x'
 
 Expected Result: Empty String
 
- 
-
 Tips:
 
 Use built-in function len() on an input string
 Use positive indexing to get the first characters of a string and negative indexing to get the last characters
- 
 
 Task 2
 
 The valid phone number program.
 
 Make a program that checks if a string is in the right format for a phone number. The program should check that the string contains only numerical characters and is only 10 characters long. Print a suitable message depending on the outcome of the string evaluation.
-
- 
 
 Task 3
 
