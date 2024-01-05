@@ -13,7 +13,7 @@ def add_data():
     print("New contact is added successfully!")
 
 
-def search_by_first_name(first_name):
+def search_by_first_name():
     while True:
         try:
             first_name = input(
@@ -44,10 +44,11 @@ def search_by_full_name(first_name, last_name):
     pass
 
 
-def delete_record(number):
-    for entry in store.phonedata:
-        if entry['number'] == number:
-            store.phonedata.remove(entry)
-            print("Record deleted successfully!")
-            return
-    print("Record not found.")
+def delete_dat():
+    # for entry in store.phonedata:
+    #     if entry['number'] == number:
+    #         store.phonedata.remove(entry)
+    #         print("Record deleted successfully!")
+    #         return
+    # print("Record not found.")
+    pass
